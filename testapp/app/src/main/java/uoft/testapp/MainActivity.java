@@ -1,4 +1,4 @@
-package com.example.chenleishen.myfirstproject;
+package uoft.testapp;
 
 import android.app.Activity;
 import android.os.Bundle;
