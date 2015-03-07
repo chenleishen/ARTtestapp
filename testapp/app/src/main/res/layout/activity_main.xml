@@ -8,48 +8,67 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent">
 
+        
+
+        <TableLayout
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TableRow>
+                <TextView
+                    android:text="Left"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="30dp">
+                </TextView>
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leftSeekBar"
+                    android:layout_weight="1"
+                    android:padding="30dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Right"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="30dp">
+                </TextView>
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rightSeekBar"
+                    android:layout_weight="1"
+                    android:padding="30dp" />
+            </TableRow>
+
+
+        </TableLayout>
+
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="350dp"
-            android:layout_height="fill_parent"
-            android:layout_centerHorizontal="true">
-
-            <Switch
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Left"
-                android:id="@+id/switch1"
-                android:layout_margin="20dp"/>
-
-            <Switch
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Right"
-                android:id="@+id/switch2"
-                android:layout_margin="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="100dp"
-            android:layout_height="fill_parent"
-            android:layout_centerHorizontal="true">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:padding="30dp">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="START"
                 android:id="@+id/buttonStart"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"/>
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="STOP"
                 android:id="@+id/buttonStop"
@@ -57,7 +76,7 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="i forgot"
                 android:id="@+id/buttonForgot"
@@ -65,7 +84,7 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="OPTION"
                 android:id="@+id/buttonOption"
